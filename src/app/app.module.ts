@@ -1,5 +1,5 @@
 import { NgModule }       from '@angular/core';
-import { BrowserModule }  from '@angular/platform-browser';
+import { BrowserModule, Title }  from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
 import { HttpClientModule }    from '@angular/common/http';
 
@@ -40,6 +40,9 @@ import { isPlatformBrowser } from '@angular/common';
     MessagesComponent,
     HeroSearchComponent
   ],
+    providers: [
+      Title
+    ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {
